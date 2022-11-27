@@ -95,7 +95,8 @@ func TestCmdNameCompletionInGo(t *testing.T) {
 		"help",
 		"secondChild",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -110,7 +111,8 @@ func TestCmdNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"secondChild",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -125,7 +127,8 @@ func TestCmdNameCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -144,7 +147,8 @@ func TestCmdNameCompletionInGo(t *testing.T) {
 		"help\tHelp about any command",
 		"secondChild",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -184,7 +188,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 
 	expected := strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -200,7 +205,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -222,7 +228,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 		"completion",
 		"help",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -244,7 +251,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"childCmd2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -259,7 +267,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -275,7 +284,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -292,7 +302,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"childCmd2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -309,7 +320,8 @@ func TestNoCmdNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"childCmd2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -334,7 +346,8 @@ func TestValidArgsCompletionInGo(t *testing.T) {
 		"two",
 		"three",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -349,7 +362,8 @@ func TestValidArgsCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"one",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -363,7 +377,8 @@ func TestValidArgsCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -397,7 +412,8 @@ func TestValidArgsAndCmdCompletionInGo(t *testing.T) {
 		"one",
 		"two",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -413,7 +429,8 @@ func TestValidArgsAndCmdCompletionInGo(t *testing.T) {
 		"thechild",
 		"two",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -448,7 +465,8 @@ func TestValidArgsFuncAndCmdCompletionInGo(t *testing.T) {
 		"one",
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -464,7 +482,8 @@ func TestValidArgsFuncAndCmdCompletionInGo(t *testing.T) {
 		"thechild",
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -480,7 +499,8 @@ func TestValidArgsFuncAndCmdCompletionInGo(t *testing.T) {
 		"thechild\tThe child command",
 		"two\tThe second",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -514,7 +534,8 @@ func TestFlagNameCompletionInGo(t *testing.T) {
 		"completion",
 		"help",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -534,7 +555,8 @@ func TestFlagNameCompletionInGo(t *testing.T) {
 		"--second",
 		"-s",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -549,7 +571,8 @@ func TestFlagNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"--first",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -570,7 +593,8 @@ func TestFlagNameCompletionInGo(t *testing.T) {
 		"--version",
 		"-v",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -605,7 +629,8 @@ func TestFlagNameCompletionInGoWithDesc(t *testing.T) {
 		"completion\tGenerate the autocompletion script for the specified shell",
 		"help\tHelp about any command",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -625,7 +650,8 @@ func TestFlagNameCompletionInGoWithDesc(t *testing.T) {
 		"--second\tsecond flag",
 		"-s\tsecond flag",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -640,7 +666,8 @@ func TestFlagNameCompletionInGoWithDesc(t *testing.T) {
 	expected = strings.Join([]string{
 		"--first\tfirst flag",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -661,7 +688,8 @@ func TestFlagNameCompletionInGoWithDesc(t *testing.T) {
 		"--version\tversion for childCmd",
 		"-v\tversion for childCmd",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -706,7 +734,8 @@ func TestFlagNameCompletionRepeat(t *testing.T) {
 		"--second",
 		"--slice",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -727,7 +756,8 @@ func TestFlagNameCompletionRepeat(t *testing.T) {
 		"--help",
 		"--slice",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -751,7 +781,8 @@ func TestFlagNameCompletionRepeat(t *testing.T) {
 		"--second",
 		"--slice",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -780,7 +811,8 @@ func TestFlagNameCompletionRepeat(t *testing.T) {
 		"--slice",
 		"-l",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -798,7 +830,8 @@ func TestFlagNameCompletionRepeat(t *testing.T) {
 	expected = strings.Join([]string{
 		"-a",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -850,7 +883,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"-p",
 		"realArg",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -868,7 +902,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"--requiredPersistent",
 		"-p",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -883,7 +918,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"--release",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -902,7 +938,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"-s",
 		"subArg",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -919,7 +956,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"--subRequired",
 		"-s",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -933,7 +971,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"--subNotRequired",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -952,7 +991,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"-p",
 		"realArg",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -974,7 +1014,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 		"-r",
 		"realArg",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -992,7 +1033,8 @@ func TestRequiredFlagNameCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"realArg",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1030,7 +1072,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 
 	expected := strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1044,7 +1087,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"log",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1058,7 +1102,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"yaml", "yml",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1072,7 +1117,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"yaml", "yml",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1086,7 +1132,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"yaml", "yml",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1100,7 +1147,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"yaml", "yml",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1114,7 +1162,8 @@ func TestFlagFileExtFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"txt",
 		":8",
-		"Completion ended with directive: ShellCompDirectiveFilterFileExt", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterFileExt", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1148,7 +1197,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 
 	expected := strings.Join([]string{
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1161,7 +1211,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1175,7 +1226,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"themes",
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1189,7 +1241,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"themes",
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1203,7 +1256,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"themes",
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1217,7 +1271,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"themes",
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1230,7 +1285,8 @@ func TestFlagDirFilterCompletionInGo(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":16",
-		"Completion ended with directive: ShellCompDirectiveFilterDirs", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveFilterDirs", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1272,7 +1328,8 @@ func TestValidArgsFuncCmdContext(t *testing.T) {
 
 	expected := strings.Join([]string{
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1296,7 +1353,8 @@ func TestValidArgsFuncSingleCmd(t *testing.T) {
 		"one",
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1311,7 +1369,8 @@ func TestValidArgsFuncSingleCmd(t *testing.T) {
 	expected = strings.Join([]string{
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1338,7 +1397,8 @@ func TestValidArgsFuncSingleCmdInvalidArg(t *testing.T) {
 
 	expected := strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1369,7 +1429,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 		"one",
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1384,7 +1445,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 	expected = strings.Join([]string{
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1398,7 +1460,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1414,7 +1477,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 		"three",
 		"four",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1428,7 +1492,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 	expected = strings.Join([]string{
 		"three",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1442,7 +1507,8 @@ func TestValidArgsFuncChildCmds(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1469,7 +1535,8 @@ func TestValidArgsFuncAliases(t *testing.T) {
 		"one",
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1484,7 +1551,8 @@ func TestValidArgsFuncAliases(t *testing.T) {
 	expected = strings.Join([]string{
 		"two",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1498,7 +1566,8 @@ func TestValidArgsFuncAliases(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1622,7 +1691,8 @@ func TestFlagCompletionInGo(t *testing.T) {
 		"2",
 		"10",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1638,7 +1708,8 @@ func TestFlagCompletionInGo(t *testing.T) {
 		"1",
 		"10",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1655,7 +1726,8 @@ func TestFlagCompletionInGo(t *testing.T) {
 		"myfile.json",
 		"file.xml",
 		":6",
-		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1671,7 +1743,8 @@ func TestFlagCompletionInGo(t *testing.T) {
 		"file.yaml",
 		"file.xml",
 		":6",
-		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1702,7 +1775,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 		"one\tThe first",
 		"two\tThe second",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1717,7 +1791,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 	expected = strings.Join([]string{
 		"two\tThe second",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1731,7 +1806,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1747,7 +1823,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 		"three\tThe third",
 		"four\tThe fourth",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1761,7 +1838,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 	expected = strings.Join([]string{
 		"three\tThe third",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1775,7 +1853,8 @@ func TestValidArgsFuncChildCmdsWithDesc(t *testing.T) {
 
 	expected = strings.Join([]string{
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1814,7 +1893,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--help\thelp for child",
 		"--string\ttest string flag",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1830,7 +1910,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1846,7 +1927,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1865,7 +1947,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1881,7 +1964,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1897,7 +1981,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1913,7 +1998,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1929,7 +2015,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"arg1",
 		"arg2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1945,7 +2032,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1961,7 +2049,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"test",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1979,7 +2068,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 	expected = strings.Join([]string{
 		"--validarg",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -1998,7 +2088,8 @@ func TestFlagCompletionWithNotInterspersedArgs(t *testing.T) {
 		"--validarg",
 		"--toComp=ab",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2033,7 +2124,8 @@ func TestFlagCompletionWorksRootCommandAddedAfterFlags(t *testing.T) {
 	expected := strings.Join([]string{
 		"myval",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2077,7 +2169,8 @@ func TestFlagCompletionInGoWithDesc(t *testing.T) {
 		"2\tThe second",
 		"10\tThe tenth",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2093,7 +2186,8 @@ func TestFlagCompletionInGoWithDesc(t *testing.T) {
 		"1\tThe first",
 		"10\tThe tenth",
 		":0",
-		"Completion ended with directive: ShellCompDirectiveDefault", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveDefault", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2110,7 +2204,8 @@ func TestFlagCompletionInGoWithDesc(t *testing.T) {
 		"myfile.json\tJSON format",
 		"file.xml\tXML format",
 		":6",
-		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2126,7 +2221,8 @@ func TestFlagCompletionInGoWithDesc(t *testing.T) {
 		"file.yaml\tYAML format",
 		"file.xml\tXML format",
 		":6",
-		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoSpace, ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2154,7 +2250,8 @@ func TestValidArgsNotValidArgsFunc(t *testing.T) {
 		"one",
 		"two",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2169,7 +2266,8 @@ func TestValidArgsNotValidArgsFunc(t *testing.T) {
 	expected = strings.Join([]string{
 		"two",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2196,7 +2294,8 @@ func TestArgAliasesCompletionInGo(t *testing.T) {
 		"two",
 		"three",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2212,7 +2311,8 @@ func TestArgAliasesCompletionInGo(t *testing.T) {
 		"two",
 		"three",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2227,7 +2327,8 @@ func TestArgAliasesCompletionInGo(t *testing.T) {
 	expected = strings.Join([]string{
 		"trois",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2264,7 +2365,8 @@ func TestCompleteHelp(t *testing.T) {
 		"completion",
 		"help",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2282,7 +2384,8 @@ func TestCompleteHelp(t *testing.T) {
 		"completion",
 		"help", // "<program> help help" is a valid command, so should be completed
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2297,7 +2400,8 @@ func TestCompleteHelp(t *testing.T) {
 	expected = strings.Join([]string{
 		"child3",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2466,10 +2570,12 @@ func TestCompleteCompletion(t *testing.T) {
 	expected := strings.Join([]string{
 		"bash",
 		"fish",
+		"nushell",
 		"powershell",
 		"zsh",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2492,7 +2598,8 @@ func TestCompleteCompletion(t *testing.T) {
 
 		expected = strings.Join([]string{
 			":4",
-			"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+			"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+		}, "\n")
 
 		if output != expected {
 			t.Errorf("expected: %q, got: %q", expected, output)
@@ -2524,7 +2631,8 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 		"foo",
 		"bar",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2540,7 +2648,8 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 		"foo",
 		"bar",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2555,7 +2664,8 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 	expected = strings.Join([]string{
 		"works",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2570,7 +2680,8 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 	expected = strings.Join([]string{
 		"works",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2586,7 +2697,8 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 		"foo",
 		"bar",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2594,7 +2706,6 @@ func TestMultipleShorthandFlagCompletion(t *testing.T) {
 }
 
 func TestCompleteWithDisableFlagParsing(t *testing.T) {
-
 	flagValidArgs := func(cmd *Command, args []string, toComplete string) ([]string, ShellCompDirective) {
 		return []string{"--flag", "-f"}, ShellCompDirectiveNoFileComp
 	}
@@ -2629,7 +2740,8 @@ func TestCompleteWithDisableFlagParsing(t *testing.T) {
 		"--flag",
 		"-f",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2651,7 +2763,8 @@ func TestCompleteWithDisableFlagParsing(t *testing.T) {
 		"--nonPersistent",
 		"-n",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2680,7 +2793,8 @@ func TestCompleteWithRootAndLegacyArgs(t *testing.T) {
 		"arg1",
 		"arg2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2696,7 +2810,8 @@ func TestCompleteWithRootAndLegacyArgs(t *testing.T) {
 		"arg1",
 		"arg2",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2723,7 +2838,8 @@ func TestFixedCompletions(t *testing.T) {
 		"banana",
 		"orange",
 		":4",
-		"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n")
+		"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+	}, "\n")
 
 	if output != expected {
 		t.Errorf("expected: %q, got: %q", expected, output)
@@ -2769,7 +2885,8 @@ func TestCompletionForGroupedFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"subArg",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "flags in group suggested with - prefix",
@@ -2782,7 +2899,8 @@ func TestCompletionForGroupedFlags(t *testing.T) {
 				"--ingroup3",
 				"--nogroup",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "when flag in group present, other flags in group suggested even without - prefix",
@@ -2792,7 +2910,8 @@ func TestCompletionForGroupedFlags(t *testing.T) {
 				"--ingroup3",
 				"subArg",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "when all flags in group present, flags not suggested without - prefix",
@@ -2800,7 +2919,8 @@ func TestCompletionForGroupedFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"subArg",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "group ignored if some flags not applicable",
@@ -2810,7 +2930,8 @@ func TestCompletionForGroupedFlags(t *testing.T) {
 				"completion",
 				"help",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 	}
 
@@ -2869,7 +2990,8 @@ func TestCompletionForMutuallyExclusiveFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"subArg",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "flags in mutually exclusive group suggested with the - prefix",
@@ -2882,7 +3004,8 @@ func TestCompletionForMutuallyExclusiveFlags(t *testing.T) {
 				"--ingroup3",
 				"--nogroup",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "when flag in mutually exclusive group present, other flags in group not suggested even with the - prefix",
@@ -2893,7 +3016,8 @@ func TestCompletionForMutuallyExclusiveFlags(t *testing.T) {
 				"-h",
 				"--nogroup",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "group ignored if some flags not applicable",
@@ -2904,7 +3028,8 @@ func TestCompletionForMutuallyExclusiveFlags(t *testing.T) {
 				"--ingroup1",
 				"--ingroup2",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 	}
 
@@ -2986,70 +3111,80 @@ func TestCompletionCobraFlags(t *testing.T) {
 				"--version",
 				"-v",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after --help flag",
 			args: []string{"--help", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after -h flag",
 			args: []string{"-h", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after --version flag",
 			args: []string{"--version", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after -v flag",
 			args: []string{"-v", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after --help flag even with other completions",
 			args: []string{"child", "--help", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after -h flag even with other completions",
 			args: []string{"child", "-h", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after --version flag even with other completions",
 			args: []string{"child", "--version", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after -v flag even with other completions",
 			args: []string{"child", "-v", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "no completion after -v flag even with other flag completions",
 			args: []string{"child", "-v", "-"},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after --help flag when created by program",
@@ -3057,7 +3192,8 @@ func TestCompletionCobraFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"extra2",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after -h flag when created by program",
@@ -3065,7 +3201,8 @@ func TestCompletionCobraFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"extra2",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after --version flag when created by program",
@@ -3073,7 +3210,8 @@ func TestCompletionCobraFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"extra2",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after -v flag when created by program",
@@ -3081,14 +3219,16 @@ func TestCompletionCobraFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"extra2",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after --version when only -v flag was created by program",
 			args: []string{"child3", "--version", ""},
 			expectedOutput: strings.Join([]string{
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 		{
 			desc: "completion after -v flag when only -v flag was created by program",
@@ -3096,7 +3236,8 @@ func TestCompletionCobraFlags(t *testing.T) {
 			expectedOutput: strings.Join([]string{
 				"extra3",
 				":4",
-				"Completion ended with directive: ShellCompDirectiveNoFileComp", ""}, "\n"),
+				"Completion ended with directive: ShellCompDirectiveNoFileComp", "",
+			}, "\n"),
 		},
 	}
 
