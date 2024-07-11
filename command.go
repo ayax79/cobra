@@ -875,7 +875,7 @@ func (c *Command) ArgsLenAtDash() int {
 
 func (c *Command) execute(a []string) (err error) {
 	if c == nil {
-		return fmt.Errorf("Called Execute() on a nil Command")
+		return fmt.Errorf("called Execute() on a nil Command")
 	}
 
 	if len(c.Deprecated) > 0 {
@@ -1460,7 +1460,6 @@ func (c *Command) UseLine() string {
 
 // DebugFlags used to determine which flags have been assigned to which commands
 // and which persist.
-// nolint:goconst
 func (c *Command) DebugFlags() {
 	c.Println("DebugFlags called on", c.Name())
 	var debugflags func(*Command)
